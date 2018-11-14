@@ -1,0 +1,18 @@
+server:
+  port: 8001
+
+feign:
+  hystrix:
+    enabled: true
+
+ribbon:
+  ReadTimeout: 5000
+  ConnectTimeout: 5000
+
+hystrix:
+  commond:
+    default:
+      excution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000
