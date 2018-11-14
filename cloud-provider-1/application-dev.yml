@@ -1,5 +1,5 @@
 server:
-  port: 9002
+  port: 9001
   
 spring:
   datasource:
@@ -7,7 +7,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://47.100.96.81:3306/mysql?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
     username : mysql
-    password : 1234567
+    password : 123456
     type : com.alibaba.druid.pool.DruidDataSource
     druid:
       initial-size : 20
