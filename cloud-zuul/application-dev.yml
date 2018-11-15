@@ -2,9 +2,14 @@ server:
   port: 4001
 
 zuul:
+  prefix: /v1
   routes:
-    springcloud-consumer-config: /consumer/**
-    springcloud-provider-config: /provider/**
+    ribbonApi:
+      path: /ribbon/**
+      serviceId: cloud-consumer-ribbon
+    feignApi:
+      path: /feign/**
+      serviceId: cloud-consumer-feign
 
 hystrix:
   command:
