@@ -1,14 +1,14 @@
 server:
-  port: 4001
+  port: 4002
 
 zuul:
   prefix: /v1
   routes:
     ribbonApi:
-      path: /ribbon/**
+      path: /ribbon1/**
       serviceId: cloud-consumer-ribbon
     feignApi:
-      path: /feign/**
+      path: /feign1/**
       serviceId: cloud-consumer-feign
 
 hystrix:
